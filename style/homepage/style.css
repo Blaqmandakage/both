@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+main{
+    padding-top: 5rem ;
+    font-family: "Nunito", monospace;
+    width:100%;
+   
+}
+.background{
+    
+   z-index: -1;
+    background: url("/images/faded_gallery-OfdOEdGYiuk-unsplash.jpg");
+    
+}
+.background .background-exprience{
+    color:white;
+    font-size: 1.6rem;
+    padding-top:1rem;
+    padding-left:1rem;
+    text-transform: capitalize;
+    font-family: "Roboto", monospace;
+}
+.background .background-exprience-two{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+     padding-left:1rem;
+     font-size: 0.5rem;
+     color:#eef6ee;
+
+}
+.background-link{
+    padding-left: 1rem;
+    padding-top: 1rem;
+
+}
+.background-link a{
+    text-decoration: none;
+    background-color: green;
+    color:white;
+    padding:0.5rem 2rem;
+    border-radius: 10px;
+}
+.background-reviews{
+  
+    padding-left:1rem;
+    padding-top:2rem;
+    padding-right: 1rem;
+    padding-bottom:2rem;
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: space-between;
+    color:whitesmoke;
+    width:100%;
+
+}
+
+@media (min-width:40rem){
+ main{
+    padding-top: 5rem ;
+    font-family: "Nunito", monospace;
+    width:100%;
+     margin: auto;
+    max-width: 90rem
+    
+   
+}
+.background{
+   margin: 0 auto;
+   z-index: -1;
+    background: url("/images/faded_gallery-OfdOEdGYiuk-unsplash.jpg");
+    min-height:500px;
+    background-position: center;
+    background-size: cover;
+    opacity:0.8 
+}
+.background .background-exprience{
+    line-height: 1.4;
+    color:white;
+    font-size: 2.5rem;
+    padding-top:4.6rem;
+    padding-left:4.6rem;
+    text-transform: capitalize;
+    font-family: "Viga", sans-serif;
+}
+.background .background-exprience-two{
+    padding-top: 2rem;
+    font-size: 1rem;
+     padding-left:4.6rem;
+     color:green;
+
+}
+.background-link{
+    padding-left: 4.6rem;
+    padding-top: 2rem;
+
+}
+.background-link a{
+    text-decoration: none;
+    background-color: green;
+    color:white;
+    padding:1rem;
+    border-radius: 10px;
+}
+.background-reviews{
+    padding-left: 4.6rem;
+    padding-top:2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color:whitesmoke;
+    /* border-left:2px solid red; */
+    width:700px;
+
+}
+.background-reviews .background-first-review{   
+border-right: 2px solid #333;
+padding-right: 1rem;
+
+}
+.background-reviews .background-first-review:last-child{
+    
+border-right: none;
+padding-right: 1rem;
+}
+
+}
+
+.powerbank-products-grid-display{
+    margin:6px auto;
+    padding:0.5rem;
+    max-width:400px;
+    display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   justify-content: center;
+   align-items: center;
+   gap:1rem;
+
+}
+.power-bank-product{
+    width:100%;
+     border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 0px 2px 1px #33333330;
+    /* width:200px; */
+}
+.power-bank-images{
+    position: relative;
+     width:100%;
+    height:200px; 
+     /* overflow: hidden; */
+   
+}
+.power-bank-image{
+   
+    width:100%;
+    height:100%
+}
+/* .power-bank-name, .power-bank-rating, .power-bank-price, .power-bank-option{
+    padding-left:1rem;
+} */
+.power-bank-name-product{
+    padding-top: 1rem;
+    padding-left:0.5rem;
+    padding-bottom: 1rem;
+    font-size:0.6rem;
+}
+.power-bank-rating{
+    padding-left:0.5rem;
+    width:70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.power-bank-points{
+    font-size: 0.6rem;
+}
+.power-bank-rating-icon{
+    width:50px;
+}
+.power-bank-price{
+    padding:0.5rem;
+    font-size: 0.5rem;
+}
+.power-bank-option{
+    padding-left:0.5rem;
+
+}
+.power-bank-add-to-cart-display{
+    text-align: center;
+    padding: 1rem 0;
+}
+.power-bank-add-to-cart{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: 600;
+    border-radius:10px;
+    margin: 0.5rem auto;
+
+}
+.power-bank-add-to-cart:hover{
+    background-color: black;
+    color:white
+}
+@media (min-width: 40rem){
+    .powerbank-products-grid-display{
+    margin:12px auto;
+    max-width:1120px;
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+
+}
+.power-bank-product{
+   margin: 1rem 0.5rem;
+    border-radius: 10px;
+    padding-left: 0.5rem;
+    padding-top:1rem;
+    width:230px;
+    box-shadow: 1px 0px 2px 1px #33333330;
+    /* width:200px; */
+}
+.power-bank-product{
+   margin: 1rem 0.5rem;
+    border-radius: 10px;
+    padding-left: 1rem;
+    padding-top:1rem;
+    width:230px;
+    overflow: hidden;
+    box-shadow: 1px 0px 2px 1px #33333330;
+    /* width:200px; */
+}
+.power-bank-name-product{
+    font-size:1rem;
+}
+.power-bank-images{
+    position: relative;
+    width:200px;
+    height:200px;
+     overflow: hidden;
+    border-radius: 10px;
+}
+.power-bank-rating{
+    width:120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.power-bank-rating-icon{
+    width:70px;
+}
+.power-bank-points{
+    font-size: 1rem;
+}
+.power-bank-price{
+    padding:0.5rem;
+    font-size: 1rem;
+}
+}
+

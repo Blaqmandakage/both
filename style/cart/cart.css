@@ -1,0 +1,262 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap");
+
+body{
+    font-family: "Momo" sans-serif;
+} */
+.totals{
+    position: relative;
+}.total-container-for-cart{
+    width:100%;
+    margin-top: 1rem;
+    position:absolute;
+    top:27rem
+}
+.cart-flex{
+    margin:1rem;
+     border:2px  solid #3333331a;
+    /* width:700px; */
+    display:flex;
+    justify-content: space-between;
+    margin-left:1rem;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.cart-image-desc{
+    width:100%;
+    display: flex;
+    padding:1rem
+}
+.cart-desc{
+    padding-top:1.5rem;
+    /* width:150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     padding-left: 0.5rem;
+     font-size: 0.9rem;
+
+}
+.cart-desc p{
+     padding-bottom: 1.9rem;
+     font-size: 0.9rem;
+     font-weight: 900;
+
+}
+
+.cart-image{
+    border-radius: 10px;
+    width:150px;
+    height:150px;
+  
+
+}
+
+.cart-quantity-delete{
+   padding-bottom:1.2rem;
+   padding-top: 0.9rem;
+    font-size: 0.5rem;
+    font-weight: 900;
+    width:80px;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.delete-button{
+    cursor: pointer;
+    color:red
+}
+ .quantity-number{
+    cursor:pointer;
+    color:green
+ }
+
+@media (min-width: 40rem){
+    .totals{
+    display:flex;
+    justify-content: space-between;
+    
+     max-width: 1100px;
+     margin:auto;
+}
+.cart-check{
+     max-width: 1100px;
+     margin:auto;
+    padding-top: 10rem;
+    display:flex;
+    justify-content: space-between;
+
+}
+.total-container-for-cart{
+    position: relative;
+    top:0;
+    margin-top: 2rem;
+}
+.cart-flex{
+    margin:1rem;
+     border:1px  solid #02100217;
+    width:700px;
+    display:flex;
+    justify-content: space-between;
+    margin-left:1rem;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.cart-image-desc{
+    width:100%;
+    display: flex;
+    padding:1rem
+}
+.cart-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+     padding-left: 1rem;
+     padding-top: 2rem;
+     font-size: 1.3rem;
+
+}
+.cart-desc p{
+     padding-left: 1rem;
+     padding-bottom: 2rem;
+     font-size: 1.3rem;
+     font-weight: 900;
+
+}
+
+.cart-image{
+    border-radius: 10px;
+    width:200px;
+    height:200px;
+  
+
+}
+
+.cart-quantity-delete{
+    padding-top: 0.6rem;
+    padding-bottom: rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    width:180px;
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.delete-button{
+    cursor: pointer;
+    color:red
+}
+ .quantity-number{
+    cursor:pointer;
+    color:green
+ }
+
+
+
+
+}
+
+
+
+.review-order{
+    padding:1rem;
+ }
+.orders-list-price{
+    width:100%;
+    position: absolute;
+    top:3rem;
+}
+.order-summary-font{
+    padding-top:1rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.order-summary{
+    margin: 0 1rem;
+    padding: 0.5rem 2rem;
+    border: 2px solid #020b021e;
+    border-radius: 8px;
+   
+}
+ .both{
+   
+    padding-bottom:1rem;
+    display: flex;
+    flex-direction: column;
+ }
+ .flex{
+    font-size: 1rem;
+    padding-top:1rem;
+    display:flex;
+    justify-content: space-between;
+    gap:0.5rem;
+ }
+ .order-total, .order-total-price{
+    font-size: 1rem;
+    font-weight: 700;
+    padding:0.3rem 0;
+    color:red
+ }
+ .place-your-order{
+    margin:0.5rem 0;
+    border:none;
+    padding:1rem;
+    font-size: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+
+ }
+
+ @media (min-width: 40rem){
+.orders-list-price{
+    position: relative;
+    top:0;
+}
+.order-summary{
+   margin-top:3rem;
+    padding: 0.5rem 1.2rem;
+     border:1px  solid #02100217;
+    width: 350px;
+    overflow: hidden;
+    box-shadow: 2px 2px 1px 1.5px rgba(0, 128, 0, 0.036);
+    border-radius: 8px;
+
+}
+ .both{
+   
+    padding-bottom:1rem;
+    display: flex;
+    flex-direction: column;
+ }
+ .flex{
+    font-size: 1rem;
+    padding-top:1rem;
+    display:flex;
+    justify-content: space-between;
+    gap:0.5rem;
+ }
+ .order-total, .order-total-price{
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding:0.5rem 0;
+    color:red
+ }
+ .place-your-order{
+    margin:0.5rem 0;
+    border:none;
+    padding:1rem;
+    font-size: 1rem;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+
+ }
+ .review-order{
+    display:none;
+ }
+
+ }
