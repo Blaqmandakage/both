@@ -22,6 +22,14 @@ body{
     border-radius: 10px;
 
 }
+.check-out-numbers{
+    list-style: none;
+    text-decoration: none;
+    font-weight: 900;
+    font-size:1rem;
+    color:black
+
+}
 
 .cart-image-desc{
     width:100%;
@@ -52,7 +60,9 @@ body{
   
 
 }
-
+.cart-check{
+    display:none;
+}
 .cart-quantity-delete{
    padding-bottom:1.2rem;
    padding-top: 0.9rem;

@@ -61,7 +61,7 @@ function updateCartQuantity(){
 
 }
 
-function addVisible(){
+function addVisible(powerBankProductId){
     const addedMessage = document.querySelector(`.js-added-to-cart-${powerBankProductId}`)
         addedMessage.classList.add("added-to-cart-visible")
 
@@ -72,14 +72,14 @@ function addVisible(){
     
 }
 
-
+ updateCartQuantity();
 document.querySelectorAll(".js-power-bank-cart")
 .forEach((button)=>{
     button.addEventListener("click", ()=>{
         const {powerBankProductId} = button.dataset;
         addTocart(powerBankProductId);
         updateCartQuantity();
-        addVisible()
+        addVisible(powerBankProductId)
                
     })
    

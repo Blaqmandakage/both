@@ -1,3 +1,14 @@
+ export  function  powerBankGet(powerBankProductId){
+ 
+ let matchingPowerBankProduct
+    powerBankProducts.forEach((productbank)=>{
+        if(productbank.id === powerBankProductId){
+            matchingPowerBankProduct = productbank
+        }
+    });
+    return matchingPowerBankProduct;
+}
+
 export const powerBankProducts = [
     {
         id: "69c2aaca88c3e",
