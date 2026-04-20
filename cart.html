@@ -10,7 +10,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
     <link rel="stylesheet" href="./style/shared.css">
-   <link rel="stylesheet" href="/style/cart/cart.css"> 
+   <link rel="stylesheet" href="/style/darkmode/dark.css">
+    <link rel="stylesheet" href="/style/cart/cart.css"> 
    <title>wire mind</title>
 </head>
 <body>
@@ -23,13 +24,16 @@
          
         <header>
             <div class="wiremind">
-                <button class="wire-toggle wire-toggle-two">
+                <button class="wire-toggle wire-toggle-two js-wire-toggle">
                      <i class="fas fa-bars"></i>
                 </button>
                 <a href="/index.html" class="wire-mind-logo">WIREMIND</a>
             </div>
 
-            
+            <div class="wiremind-search wiremind-search-visible">
+                <input type="text" class="wire-mind-search-input"  placeholder="Search for more products">
+                <img src="./images/icons/search-icon.png" alt="" class="wire-mind-search-icon">
+            </div>
 
             <div class="wiremind-carts">
                 <a href="cart.html" class="wiremind-cart">
@@ -43,8 +47,8 @@
             <div class="hide-backdrop">
                 <nav>
                 <ul class="hide-links">
-                    <li> <a href="" class="wire-mind-logo">Home</a></li>
-                    <li> <a href="" class="top-redirect">Sign up now</a></li>
+                    <li> <a href="index.html" class="wire-mind-logos">Home</a></li>
+                    <li> <a href="" class="top-redirect js-dark-mode-toggle">mode</a></li>
                 </ul>
                 </nav>
             </div>

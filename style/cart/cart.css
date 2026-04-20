@@ -4,13 +4,14 @@ body{
     font-family: "Momo" sans-serif;
     position: relative;
 } 
+
 .totals{
     position: relative;
 }.total-container-for-cart{
     width:100%;
     margin-top: 1rem;
     position:absolute;
-    top:27rem
+    top:28rem
 }
 .cart-flex{
     margin:1rem;
@@ -176,7 +177,10 @@ body{
 
 
 .review-order{
-    padding:1rem;
+    padding-left:1rem;
+    padding-top:4rem;
+    padding-bottom:0.5rem;
+    font-size: 1.6rem;
  }
 .orders-list-price{
     width:100%;

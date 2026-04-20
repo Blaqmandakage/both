@@ -99,6 +99,11 @@ body{
     color:#239312ba;
     font-size: 1.2rem
 }
+.wire-mind-logos, .top-direct{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+}
 .wiremind-search{
     opacity:0; 
     width:0;
@@ -268,7 +273,8 @@ body{
 }
 .hide-backdrop {
   height: 100vh;
-  background-color: #32db1f;
+  background-color: #0b2808;
+  color:white;
 
   position: fixed;
   top: 5.3rem;

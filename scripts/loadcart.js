@@ -1,7 +1,10 @@
 import { powerBankCart, removeFromCart } from "./data/carts.js";
 import { powerBankGet} from "./data/products.js";
 import { formatNaira } from "./utils/moneyf.js";
-
+import { backDrop } from "./utils/backdrop.js";
+import { darkmode } from "./utils/darkmode.js";
+backDrop();
+darkmode()
 
 
      let cartSummaryHTML = "";

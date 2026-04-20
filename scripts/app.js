@@ -1,6 +1,10 @@
 import { formatNaira } from "./utils/moneyf.js"
 import { powerBankProducts } from "./data/products.js";
-import { powerBankCart, addTocart } from "./data/carts.js";    
+import { powerBankCart, addTocart } from "./data/carts.js";  
+import { backDrop } from "./utils/backdrop.js";
+import { darkmode } from "./utils/darkmode.js";
+backDrop();
+darkmode();  
 let powerBankProductsHTML = "";
 
 powerBankProducts.forEach((productbank)=>{
