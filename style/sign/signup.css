@@ -1,0 +1,88 @@
+.form-container {
+    padding-top: 5rem;
+
+    
+   
+}
+
+h2::first-letter{
+    font-size: 6rem;
+    color:green;
+    padding-left: 1rem;
+    
+    
+}
+form{
+  
+    margin: 1rem;
+   /* width: 100%; */
+   padding: 1rem;
+  
+    text-align: left;
+ 
+  
+  
+
+}
+@media (min-width: 40rem){
+    .form-container {
+    padding: 12rem;
+    text-align: center;
+    
+   
+}
+
+    form{
+    padding: 1rem;
+    max-width: 800px;
+    margin:0 auto;
+    text-align: left;
+  box-shadow: 12px 23px 45px #3333338e;
+  border: 2px solid #00800041;
+  
+
+}
+form:hover{
+  transition: 0.3 ease-in;
+    padding: 1rem;
+    max-width: 500px;
+  box-shadow: 1px 2px 9px #3333338e;
+  border: 2px solid #01180141;
+  
+
+}
+
+}
+
+.username-input, label{
+    width: 100%;
+    display: block;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-weight: 800;
+    
+   
+  
+}
+.username-input{
+    width: 100%;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    border:none;
+    outline: none;
+     border-bottom: 2px solid #00800041;
+}
+.sign{
+    width: 100%;
+    margin-top: 1rem;
+    display:inline;
+    padding: 0.5rem;
+    font-weight: 700;
+    border-radius: 10px;
+    border:none;
+    font-size: 1rem;
+}
+.sign:hover{
+   background-color: green;
+   color: white;
+}
