@@ -275,10 +275,10 @@ body{
   height: 100vh;
   background-color: #0b2808;
   color:white;
-
+text-transform: capitalize;
   position: fixed;
   top: 5.3rem;
-  left: 0;
+  right: 0;
   font-size: 1.5rem;
   padding-left: 1rem;
   padding-right: 10rem;
@@ -294,15 +294,15 @@ body{
 .hide-backdrop .hide-links a {
   text-decoration: none;
   font-weight: 700;
-  color: black;
+  color: rgb(235, 228, 228);
   padding: 1rem;
   display: flex;
   transition: all 0.3s ease;
 }
 .hide-backdrop .hide-links a:hover {
-  text-decoration: underline;
   cursor: pointer;
   transition: all 0.5s ease;
+    color: greenyellow;
 }
 
 @media (min-width: 40rem){
