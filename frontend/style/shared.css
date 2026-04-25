@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+
+
+*{
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logout {
+  color: red;
+  cursor: pointer;
+}
+
+.logout:hover {
+  text-decoration: underline;
+}
+body{
+    font-family: "Nunito", sans-serif;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.top-registration{
+    text-align: center;
+    padding: 0.6rem 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    display: none;
+}
+.top-registration .top-redirect{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color:white;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+@media (min-width: 40rem){
+    .top-registration{
+    text-align: center;
+    padding: 0.6rem 0;
+    background-color: black;
+    color: white;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    display:block;
+}
+.top-registration .top-redirect{
+    color:white;
+    text-transform: capitalize;
+}
+
+}
+.fullpage{
+   position: fixed;
+   z-index: 1;
+   width:100%;
+   padding-top: 0.5rem;
+   padding-left: 0.5rem;
+   padding-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    background-color:#333;
+  
+}
+.fullpage header{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wire-toggle-two{
+    /* margin-left:1rem;
+    width:50px;
+    height:30px;
+    background:#239312ba;;
+    color:white;
+    border:none; */
+    /* margin-left:1rem; */
+    width: 40px;
+  background: transparent;
+  color:#239312ba;
+  outline: none;
+  border: none;
+  height: 20px;
+  width: 3rem;
+  font-size: 1.1rem;
+  vertical-align: center;
+
+}
+.wiremind{
+    width:140px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    vertical-align: middle;
+}
+.wire-mind-logo{
+    
+    text-decoration: none;
+    font-weight: 900;
+    color:#239312ba;
+    font-size: 1.2rem
+}
+.wire-mind-logos, .top-direct{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+}
+.wiremind-search{
+    opacity:0; 
+    width:0;
+    
+}
+
+.wiremind-carts{
+    margin-right:1rem;
+    background-color: black;
+    display: transparent;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background: transparent;
+    
+}
+.wiremind-cart{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    color:green;
+}
+.wiremind-cart p{
+    font-size: 1.2rem;
+    font-weight: 700;    
+}
+.wire-mind-cart-logo{
+    width:40px;
+    height:30px;
+}
+.wiremind-cart .cart-number{
+    /* position: absolute;
+    text-align: center;
+    left:1.1rem;
+    top:0rem;
+    width:25px */
+  
+  font-size: 12px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 1px;
+  left: 9px;
+  
+  width: 26px;
+  text-align: center;
+}
+@media (min-width: 40rem){
+    .fullpage{
+   position: fixed;
+   z-index: 1;
+   width:100%;
+   padding-top: 4rem;
+   padding-bottom: 1rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #333333;
+  
+}
+
+.fullpage header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.wire-mind-logo{
+    text-decoration: none;
+    font-weight: 900;
+    
+    color:whitesmoke;
+    font-size: 2rem
+}
+.wiremind-search{
+    position: relative;
+    /* border:2px solid red; */
+    width: 800px;
+    height:50px;
+    opacity:1;
+}
+.wiremind-search .wire-mind-search-input{
+    width: 100%;
+    height:50px;
+    border:none;
+    /* position:absolute; */
+    border-radius: 10px;
+    z-index: -1;
+    padding-left:3rem;
+    border: none;
+    outline: none;
+}
+.wiremind-search .wire-mind-search-icon {
+    position: absolute;
+    top:0.6rem;
+    left:0.5rem;
+    width: 29px
+   
+
+}
+.wiremind-carts{
+    background-color: black;
+    color:green;
+    display: transparent;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background: transparent;     
+}
+.wiremind-cart{
+    list-style: none;
+    text-decoration: none;
+}
+
+.wiremind-cart p{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;    
+}
+.wire-mind-cart-logo{
+    width:50px;
+    height:40px;
+    /* position:absolute */
+}
+.wiremind-cart .cart-number{
+    /* position: absolute;
+    left:1.5rem;
+    top:0rem;
+    text-align: center;
+    width: 26px; */
+
+  font-size: 18px;
+  font-weight: 700;
+
+  position: absolute;
+  top: 4px;
+  left: 15px;
+  
+  width: 26px;
+  text-align: center;
+
+}
+.wire-toggle{
+    display:none;
+}
+
+}
+
+
+.backdrop {
+  height: 100vh;
+  width: 100%;
+  background-color: #000000c2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 3.5rem;
+  padding-left: 1rem;
+  padding-bottom: 4rem;
+  transition: 0.5s linear ease-in-out;
+  z-index:1;
+
+  filter: blur(5px);
+  display: none;
+}
+.hide-backdrop {
+  height: 100vh;
+  background-color: #0b2808;
+  color:white;
+text-transform: capitalize;
+  position: fixed;
+  top: 5.3rem;
+  right: 0;
+  font-size: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 10rem;
+  padding-bottom: 4rem;
+  transition: 0.5s linear ease-in-out;
+  z-index: 1;
+  display: none;
+}
+
+.hide-backdrop .hide-links {
+  list-style: none;
+}
+.hide-backdrop .hide-links a {
+  text-decoration: none;
+  font-weight: 700;
+  color: rgb(235, 228, 228);
+  padding: 1rem;
+  display: flex;
+  transition: all 0.3s ease;
+}
+.hide-backdrop .hide-links a:hover {
+  cursor: pointer;
+  transition: all 0.5s ease;
+    color: greenyellow;
+}
+
+@media (min-width: 40rem){
+.backdrop {
+  display: none;
+} 
+.hide-backdrop{
+    display:none;
+}
+}
+
+
