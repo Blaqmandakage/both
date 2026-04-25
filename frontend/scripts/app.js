@@ -10,10 +10,10 @@ showlogged()
 
 
 async function loadProducts() {
-  const res = await fetch("http://localhost:5000/api/products");
-  const powerBankProducts = await res.json();
+  const res = await fetch("https://wiremind.onrender.com/api/products");
+  const products = await res.json();
 
-  renderProducts(powerBankProducts);
+  renderProducts(products);
 }
 
 
@@ -63,10 +63,12 @@ function renderProducts(powerBankProducts) {
 
     powerBankProductsHTML += html;
 
-    document.querySelector(".js-powerbank-products-grid-display")
-    .innerHTML = powerBankProductsHTML;
+  
     
 })
+
+  document.querySelector(".js-powerbank-products-grid-display")
+    .innerHTML = powerBankProductsHTML;
 }
 loadProducts();
 
