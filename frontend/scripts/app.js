@@ -1,5 +1,6 @@
 import { formatNaira } from "./utils/moneyf.js"
-import { powerBankProducts } from "../../backend/data/products.js";
+import { powerBankProducts } from "./data/products.js";
+// import { powerBankProducts } from "../../backend/data/products.js";
 import { powerBankCart, addTocart } from "./data/carts.js";  
 import { backDrop } from "./utils/backdrop.js";
 import { darkmode } from "./utils/darkmode.js";
@@ -10,7 +11,7 @@ showlogged()
 
 
 async function loadProducts() {
-  const res = await fetch("https://wiremind.onrender.com/api/products");
+  const res = await fetch("https://localHost:5000/api/products");
   const products = await res.json();
 
   renderProducts(products);
