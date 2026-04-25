@@ -1,5 +1,5 @@
 import { updateCartQuantitySummary, powerBankCart } from "../carts.js";
-import { powerBankGet } from "../products.js";
+import { powerBankGet } from "../../../../backend/data/products.js";
 import { formatNaira } from "../../utils/moneyf.js";
 
 

@@ -5,12 +5,39 @@ const mongoose = require("mongoose");
 const User = require("./modules/user");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const Product = require("./modules/product");
 
 const app = express();
 
-app.use(cors());
-app.use(express.urlencoded({extended: true}));
+// app.use(cors());
+
+app.use(cors({
+  origin: [
+    "http://127.0.0.1:5501",
+    "http://localhost:5501"
+  ]
+}));
+
+app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+
+
+
+app.get("/api/products", async (req, res) => {
+  try {
+    const products = await Product.find();
+    res.json(products);
+  } catch (err) {
+    res.status(500).json({ message: "Error fetching products" });
+  }
+});
+
+//add product to mongoDb
+app.post("/api/products", async (req, res) => {
+  const product = await Product.create(req.body);
+  res.json(product);
+});
 
 const dubi = process.env.MONGO_URI;
 
